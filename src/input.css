@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-2xs: 320px;
+
+  --color-white: #ffffff;
+  --color-white2: #f8f6f0;
+  --color-black: #000000;
+  --color-black2: #3f4139;
+  --color-lightgrayish-green: #cad2c5;
+  --color-dark-green: #3f4139;
+  --color-darkgrayish-green: #949c7a;
+  --color-purple: #ae65cf;
+  --color-orangish-white: #f8f6f0;
+
+  --font-body: "Montserrat", sans-serif;
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-american-lemon: "american-lemon";
+
+  --shadow-textcontainer: 0px 4px 4px 0px #00000040;
+}
+
+@font-face {
+  font-family: "american-lemon";
+  src: url("../public/assets/Fonts/American\ Lemon.otf");
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  ::after,
+  ::before,
+  * {
+    @apply box-border;
+  }
+  body {
+    @apply m-0 p-0 font-body;
+  }
+  h1,
+  .h1 {
+    @apply text-[70px];
+  }
+  h2,
+  .h2 {
+    @apply text-[65px];
+  }
+  h3,
+  .h3 {
+    @apply text-[40px];
+  }
+  h4,
+  .h4 {
+    @apply text-[30px];
+  }
+  h5,
+  .h5 {
+    @apply text-[22px];
+  }
+  h6,
+  .h6 {
+    @apply text-base;
+  }
+  p {
+    @apply text-[20px];
+  }
+  .small-text {
+    @apply text-[18px];
+  }
+}
+
+/* @layer components {
+} */
+
+/* @layer utilities {
+} */
