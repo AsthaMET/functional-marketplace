@@ -5,6 +5,7 @@
 
   --color-white: #ffffff;
   --color-white2: #f8f6f0;
+  --color-white3: #FAF8F2;
   --color-black: #000000;
   --color-black2: #3f4139;
   --color-lightgrayish-green: #cad2c5;
@@ -13,8 +14,8 @@
   --color-purple: #ae65cf;
   --color-orangish-white: #f8f6f0;
 
-  --font-body: "Montserrat", sans-serif;
-  --font-heading: "Bebas Neue", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  --font-heading: "Arya", sans-serif;
   --font-american-lemon: "american-lemon";
 
   --shadow-textcontainer: 0px 4px 4px 0px #00000040;
@@ -59,7 +60,7 @@
   }
   h6,
   .h6 {
-    @apply text-base;
+    @apply text-base font-bold leading-4;
   }
   p {
     @apply text-[20px];
@@ -67,10 +68,16 @@
   .small-text {
     @apply text-[18px];
   }
+  .text-14{
+    @apply text-[14px] leading-3.5 font-bold;
+  }
 }
 
 /* @layer components {
 } */
 
-/* @layer utilities {
-} */
+@layer utilities {
+  .container-max-1240{
+    @apply px-25;
+  }
+}
