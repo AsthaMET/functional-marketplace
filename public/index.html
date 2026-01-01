@@ -21,45 +21,146 @@
       <svg width="10" height="6" class="-rotate-90" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M0.84375 0L8.875 0C9.4375 0 9.71875 0.6875 9.3125 1.09375L5.3125 5.09375C5.0625 5.34375 4.65625 5.34375 4.40625 5.09375L0.40625 1.09375C0 0.6875 0.28125 0 0.84375 0Z"
-          fill="#3F4139" />
+          fill="#3f4139" />
       </svg>
     </div>
   </div>
 
   <header>
     <nav>
-      <div class="bg-white3 py-9 flex justify-between items-center container-max-1240">
-        <div class="flex gap-5.25 relative items-start">
-          <div class="group h-full flex items-center">
-            <div class="flex items-center border-b-2 border-transparent hover:border-purple pb-1 cursor-pointer">
-              <h6 class="leading-4">SHOP</h6>
-              <svg width="10" height="6" class="mx-2.75" viewBox="0 0 10 6" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0.84375 0L8.875 0C9.4375 0 9.71875 0.6875 9.3125 1.09375L5.3125 5.09375C5.0625 5.34375 4.65625 5.34375 4.40625 5.09375L0.40625 1.09375C0 0.6875 0.28125 0 0.84375 0Z"
-                  fill="#AE65CF" />
-              </svg>
-            </div>
-            <div class="absolute -left-25 right-0 top-21.5 bg-white3 
-                invisible opacity-0 shadow
-                group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 
-                transition-all duration-300 ease-out z-50">
-              <div class="px-6">
-                <div>
-                  <h4>Collections</h4>
-                  <ul>
+      <div class="2xs:hidden lg:flex bg-white3 py-9 flex justify-between relative items-center container-max-1240">
+        <div class="flex gap-5.25 static items-start">
+          <div class="h-full flex items-center">
+            <input type="checkbox" id="shopPeer" class="peer hidden" />
+            <label for="shopPeer" class="group h-full flex items-center">
+              <div class="flex items-center border-b-2 border-transparent hover:border-purple pb-1 cursor-pointer">
+                <h6 class="leading-4">SHOP</h6>
+                <svg width="10" height="6" class="mx-2.75" viewBox="0 0 10 6" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.84375 0L8.875 0C9.4375 0 9.71875 0.6875 9.3125 1.09375L5.3125 5.09375C5.0625 5.34375 4.65625 5.34375 4.40625 5.09375L0.40625 1.09375C0 0.6875 0.28125 0 0.84375 0Z"
+                    fill="#AE65CF" />
+                </svg>
+              </div>
+            </label>
+            <div class="2xs:hidden lg:flex absolute right-0 top-37.5 bg-white3 lg:px-7.5 xl:px-25
+      invisible opacity-0 shadow w-full flex
+      peer-checked:visible peer-checked:opacity-100 peer-checked:translate-y-0
+      transition-all duration-300 ease-out z-50 lg:gap-13 xl:gap-19.25  pt-4.75 pb-7">
+              <div class="flex lg:gap-7.5 xl:gap-22.25 grow">
+                <div class="w-fit">
+                  <h4 class="text-black2">EXPERIENCE</h4>
+                  <ul class="mt-2">
                     <li>
                       <a href="#">
-                        <div class="flex items-center gap">
-                          <p>Enlighten</p>
+                        <div class="flex items-center justify-between">
+                          <p class="text-black2">Enlighten</p>
                           <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
                           </svg>
                         </div>
                       </a>
                     </li>
-                    <li><a href="#">New Arrivals</a></li>
+                    <li>
+                      <a href="#">
+                        <div class="flex items-center justify-between">
+                          <p class="text-black2">Relax</p>
+                          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="flex items-center justify-between">
+                          <p class="text-black2">Recover</p>
+                          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
                   </ul>
+                </div>
+                <div class="grow">
+                  <h4 class="text-black2">BUZZ</h4>
+                  <ul class="mt-2">
+                    <li>
+                      <a href="#">
+                        <div class="flex items-center justify-between">
+                          <p class="text-black2">THC</p>
+                          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="flex items-center justify-between">
+                          <p class="text-black2">CBD</p>
+                          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="flex items-center justify-between">
+                          <p class="text-black2">Adaptogens</p>
+                          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="flex items-center justify-between">
+                          <p class="text-black2">No Buzz</p>
+                          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="flex gap-6 grow text-white3">
+                <div class="grow">
+                  <div
+                    class="bg-[url('./assets/images/menu1.jpg')] bg-center bg-cover bg-no-repeat h-55 text-end justify-items-end pt-6.75 pr-6.25">
+                    <h3 class="max-w-56.75">NEW ARRIVALS</h3>
+                    <li class="items-center mt-14.25">
+                      <a href="#">
+                        <div class="flex items-center gap-3">
+                          <p class="text-white">SHOP ALL</p>
+                          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+                <div class="grow text-white3">
+                  <div
+                    class="bg-[url('./assets/images/menu2.jpg')] bg-center bg-cover bg-no-repeat h-55 text-end justify-items-end pt-6.75 pr-6.25">
+                    <h3 class="max-w-56.75">BEST SELLERS</h3>
+                    <li class="items-center mt-14.25">
+                      <a href="#">
+                        <div class="flex items-center gap-3">
+                          <p class="text-white">SHOP ALL</p>
+                          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
                 </div>
               </div>
             </div>
@@ -77,11 +178,12 @@
 
         <!-- logo -->
         <div>
-          <img src="./assets/images/logo.svg" alt="logo">
+          <img src="./assets/images/logo.svg" alt="logo" class="w-full h-full object-cover">
         </div>
 
         <div class="flex gap-4">
-          <div><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M18.0452 17.1614C19.2638 15.7405 20 13.8938 20 11.875C20 7.38769 16.3624 3.75 11.875 3.75C7.38769 3.75 3.75 7.38769 3.75 11.875C3.75 16.3624 7.38769 20 11.875 20C13.8936 20 15.7404 19.2639 17.1614 18.0452L18.3885 19.2724C18.0948 19.9231 18.2153 20.7153 18.75 21.25L23.125 25.6251C23.8154 26.3155 24.9346 26.3155 25.625 25.6251C26.3154 24.9347 26.3154 23.8155 25.625 23.1251L21.25 18.75C20.7153 18.2153 19.9231 18.0948 19.2724 18.3885L18.0452 17.1614ZM18.75 11.875C18.75 15.672 15.672 18.75 11.875 18.75C8.07804 18.75 5 15.672 5 11.875C5 8.07804 8.07804 5 11.875 5C15.672 5 18.75 8.07804 18.75 11.875ZM24.7411 24.009L20.3661 19.634C20.164 19.4318 19.8361 19.4318 19.6339 19.6339C19.4318 19.8361 19.4318 20.164 19.6339 20.3661L24.0089 24.7412C24.2111 24.9434 24.5389 24.9434 24.7411 24.7412C24.9434 24.539 24.9434 24.2111 24.7411 24.009Z"
                 fill="#3F4139" />
@@ -110,9 +212,80 @@
           </div>
         </div>
       </div>
+
+      <!-- tablet header -->
+      <div class="lg:hidden flex justify-between items-center py-10 sm:pl-12.5 sm:pr-11.75 2xs:px-6.25 bg-white3">
+        <div class="flex gap-[17.27px] items-center">
+          <div>
+            <div id="menu-button">
+              <svg width="32" height="20" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H33.7273" stroke="black" stroke-width="2" stroke-linecap="round" />
+                <path d="M1 11H33.7273" stroke="black" stroke-width="2" stroke-linecap="round" />
+                <path d="M1 21H33.7273" stroke="black" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div id="menu"
+              class="hidden absolute top-7.5 left-0 right-0 z-50 mt-2 w-full bg-darkgrayish-green pt-10.25">
+              <div class="flex">
+                <div class="w-fit">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24.761" cy="24.7607" r="17.5087" transform="rotate(-45 24.761 24.7607)" fill="#949C7A"
+                      stroke="#F8F6F0" stroke-width="3.5" />
+                    <path d="M18.1124 18.1196L31.7737 31.7809" stroke="#F8F6F0" stroke-width="3.5"
+                      stroke-linecap="round" />
+                    <path d="M18.1124 32.0059L31.7737 18.3446" stroke="#F8F6F0" stroke-width="3.5"
+                      stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="w-fit justify-self-center">
+                  <img src="./assets/images/logo.svg" alt="logo" class="2xs:max-w-32.5 sm:max-w-73.25">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18.0452 17.1614C19.2638 15.7405 20 13.8938 20 11.875C20 7.38769 16.3624 3.75 11.875 3.75C7.38769 3.75 3.75 7.38769 3.75 11.875C3.75 16.3624 7.38769 20 11.875 20C13.8936 20 15.7404 19.2639 17.1614 18.0452L18.3885 19.2724C18.0948 19.9231 18.2153 20.7153 18.75 21.25L23.125 25.6251C23.8154 26.3155 24.9346 26.3155 25.625 25.6251C26.3154 24.9347 26.3154 23.8155 25.625 23.1251L21.25 18.75C20.7153 18.2153 19.9231 18.0948 19.2724 18.3885L18.0452 17.1614ZM18.75 11.875C18.75 15.672 15.672 18.75 11.875 18.75C8.07804 18.75 5 15.672 5 11.875C5 8.07804 8.07804 5 11.875 5C15.672 5 18.75 8.07804 18.75 11.875ZM24.7411 24.009L20.3661 19.634C20.164 19.4318 19.8361 19.4318 19.6339 19.6339C19.4318 19.8361 19.4318 20.164 19.6339 20.3661L24.0089 24.7412C24.2111 24.9434 24.5389 24.9434 24.7411 24.7412C24.9434 24.539 24.9434 24.2111 24.7411 24.009Z"
+                fill="#0F130C" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- logo -->
+        <div>
+          <img src="./assets/images/logo.svg" alt="logo" class="2xs:max-w-32.5 sm:max-w-73.25">
+        </div>
+
+        <div class="flex gap-6">
+          <div>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18.75 12.5C18.75 14.5711 17.0711 16.25 15 16.25C12.9289 16.25 11.25 14.5711 11.25 12.5C11.25 10.4289 12.9289 8.75 15 8.75C17.0711 8.75 18.75 10.4289 18.75 12.5ZM15 15C16.3807 15 17.5 13.8807 17.5 12.5C17.5 11.1193 16.3807 10 15 10C13.6193 10 12.5 11.1193 12.5 12.5C12.5 13.8807 13.6193 15 15 15Z"
+                fill="#0F130C" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M26.25 15C26.25 21.2132 21.2132 26.25 15 26.25C8.7868 26.25 3.75 21.2132 3.75 15C3.75 8.7868 8.7868 3.75 15 3.75C21.2132 3.75 26.25 8.7868 26.25 15ZM21.25 22.8067C19.538 24.1791 17.3649 25 15 25C12.6351 25 10.462 24.1791 8.75 22.8067V21.4529C8.75 20.3568 9.43997 19.4876 10.3739 19.2889C11.6978 19.0072 13.3619 18.75 15 18.75C16.6381 18.75 18.3021 19.0072 19.6261 19.2889C20.56 19.4876 21.25 20.3568 21.25 21.4529V22.8067ZM22.5 21.6145V21.4529C22.5 19.8388 21.465 18.4021 19.8862 18.0662C18.5148 17.7745 16.7574 17.5 15 17.5C13.2426 17.5 11.4852 17.7745 10.1138 18.0662C8.53501 18.4021 7.5 19.8388 7.5 21.4529V21.6145C5.94409 19.8517 5 17.5361 5 15C5 9.47715 9.47715 5 15 5C20.5229 5 25 9.47715 25 15C25 17.5361 24.0559 19.8517 22.5 21.6145Z"
+                fill="#0F130C" />
+            </svg>
+          </div>
+          <div>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 2.5H5.74166C6.31171 2.5 6.80646 2.88505 6.95029 3.43098L9.64416 16.3772L9.64585 16.377L9.87954 17.5H22.6264L24.846 7.5H9.07374L8.81364 6.25H24.846C25.6456 6.25 26.2396 6.9903 26.0664 7.77087L23.8466 17.7709C23.7196 18.3429 23.2124 18.75 22.6264 18.75H10C9.30965 18.75 8.75 19.3096 8.75 20C8.75 20.6904 9.30964 21.25 10 21.25H23.746V22.5H10C8.61929 22.5 7.5 21.3808 7.5 20C7.5 19.1034 7.97196 18.3171 8.68097 17.8759L5.74166 3.75H2.5V2.5Z"
+                fill="#0F130C" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.625 26.25C10.9702 26.25 11.25 25.9701 11.25 25.625C11.25 25.2799 10.9702 25 10.625 25C10.2798 25 10 25.2799 10 25.625C10 25.9701 10.2798 26.25 10.625 26.25ZM12.5 25.625C12.5 26.6605 11.6605 27.5 10.625 27.5C9.58946 27.5 8.75 26.6605 8.75 25.625C8.75 24.5895 9.58946 23.75 10.625 23.75C11.6605 23.75 12.5 24.5895 12.5 25.625Z"
+                fill="#0F130C" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M20.625 26.25C20.9701 26.25 21.25 25.9701 21.25 25.625C21.25 25.2799 20.9701 25 20.625 25C20.2799 25 20 25.2799 20 25.625C20 25.9701 20.2799 26.25 20.625 26.25ZM22.5 25.625C22.5 26.6605 21.6605 27.5 20.625 27.5C19.5895 27.5 18.75 26.6605 18.75 25.625C18.75 24.5895 19.5895 23.75 20.625 23.75C21.6605 23.75 22.5 24.5895 22.5 25.625Z"
+                fill="#0F130C" />
+            </svg>
+          </div>
+        </div>
+      </div>
     </nav>
 
-    <div class="bg-darkgrayish-green flex gap-12 justify-center text-white2 py-3.75">
+    <div class="2xs:hidden lg:flex bg-darkgrayish-green flex gap-12 justify-center text-white2 py-3.75">
       <a href="#" class="h6">NEW ARRIVALS</a>
       <a href="#" class="h6">BEST SELLERS</a>
       <a href="#" class="h6">SUBSCRIPTIONS</a>
@@ -120,12 +293,19 @@
   </header>
 
   <div class="hero-section">
-    <div
-      class="bg-[url('./assets/images/hero-img.jpg')] bg-cover bg-center bg-no-repeat h-[calc(100vh-37px-151px-46px)] text-white">
-      <div class="max-w-211">
+    <div class="h-full text-white relative pb-81">
+      <div class="absolute inset-0 w-full h-full">
+        <img src="./assets/images/hero-img.jpg" alt="hero image" class="w-full h-full object-cover">
+      </div>
+      <div class="relative max-w-211 justify-self-center text-center pt-27.25 px-7.5">
         <h2>Your Fridge Has Higher Standards.</h2>
-        <h4>Explore the ultimate hemp beverage marketplace — packed with functional, refreshing, and feel-good finds.
-        </h4>
+        <h5>Explore the ultimate hemp beverage marketplace — packed with functional, refreshing, and feel-good finds.
+        </h5>
+        <div class="btn-purple justify-self-center mt-12.75">
+          <a href="#">
+            SHOP ALL
+          </a>
+        </div>
       </div>
     </div>
   </div>

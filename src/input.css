@@ -5,7 +5,7 @@
 
   --color-white: #ffffff;
   --color-white2: #f8f6f0;
-  --color-white3: #FAF8F2;
+  --color-white3: #faf8f2;
   --color-black: #000000;
   --color-black2: #3f4139;
   --color-lightgrayish-green: #cad2c5;
@@ -25,6 +25,10 @@
   font-family: "american-lemon";
   src: url("../public/assets/Fonts/American\ Lemon.otf");
 }
+/* @font-face {
+  font-family: "arya-regular";
+  src: url("../public/assets/Fonts/arya-regular.ttf");
+} */
 
 @layer base {
   html {
@@ -44,40 +48,49 @@
   }
   h2,
   .h2 {
-    @apply text-[65px];
+    @apply text-[65px] uppercase font-heading leading-12.25;
   }
   h3,
   .h3 {
-    @apply text-[40px];
+    @apply text-[46px] leading-11 font-heading font-normal;
   }
   h4,
   .h4 {
-    @apply text-[30px];
+    @apply text-[40px] font-heading;
   }
   h5,
   .h5 {
-    @apply text-[22px];
+    @apply text-[30px] font-semibold;
   }
   h6,
   .h6 {
-    @apply text-base font-bold leading-4;
+    @apply text-[22px];
   }
   p {
-    @apply text-[20px];
+    @apply text-[20px] font-semibold;
+  }
+  li {
+    @apply list-none;
   }
   .small-text {
     @apply text-[18px];
   }
-  .text-14{
+  .text-14 {
     @apply text-[14px] leading-3.5 font-bold;
+  }
+  .text-16 {
+    @apply text-base leading-4 font-bold;
   }
 }
 
-/* @layer components {
-} */
+@layer components {
+  .btn-purple {
+    @apply text-white bg-purple hover:bg-white3 hover:text-purple hover:border-2 hover:border-purple rounded-[5px] py-3 px-10.25 w-fit text-[14px] font-bold leading-4 cursor-pointer;
+  }
+}
 
 @layer utilities {
-  .container-max-1240{
-    @apply px-25;
+  .container-max-1240 {
+    @apply lg:px-10 xl:px-25;
   }
 }
