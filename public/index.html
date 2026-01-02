@@ -8,8 +8,7 @@
   <link href="./styles.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
 </head>
 
@@ -27,14 +26,14 @@
   </div>
 
   <header>
-    <nav>
+    <nav id="header">
       <div class="2xs:hidden lg:flex bg-white3 py-9 flex justify-between relative items-center container-max-1240">
         <div class="flex gap-5.25 static items-start">
           <div class="h-full flex items-center">
             <input type="checkbox" id="shopPeer" class="peer hidden" />
             <label for="shopPeer" class="group h-full flex items-center">
               <div class="flex items-center border-b-2 border-transparent hover:border-purple pb-1 cursor-pointer">
-                <h6 class="leading-4">SHOP</h6>
+                <div class="text-16">SHOP</div>
                 <svg width="10" height="6" class="mx-2.75" viewBox="0 0 10 6" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -49,11 +48,11 @@
       transition-all duration-300 ease-out z-50 lg:gap-13 xl:gap-19.25  pt-4.75 pb-7">
               <div class="flex lg:gap-7.5 xl:gap-22.25 grow">
                 <div class="w-fit">
-                  <h4 class="text-black2">EXPERIENCE</h4>
+                  <div class="text-26 text-black2">EXPERIENCE</div>
                   <ul class="mt-2">
-                    <li>
+                    <li class="mega-link">
                       <a href="#">
-                        <div class="flex items-center justify-between">
+                        <div>
                           <p class="text-black2">Enlighten</p>
                           <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
@@ -61,9 +60,9 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="mega-link">
                       <a href="#">
-                        <div class="flex items-center justify-between">
+                        <div>
                           <p class="text-black2">Relax</p>
                           <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
@@ -71,9 +70,9 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="mega-link">
                       <a href="#">
-                        <div class="flex items-center justify-between">
+                        <div>
                           <p class="text-black2">Recover</p>
                           <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
@@ -84,11 +83,11 @@
                   </ul>
                 </div>
                 <div class="grow">
-                  <h4 class="text-black2">BUZZ</h4>
+                  <div class="text-26 text-black2">BUZZ</div>
                   <ul class="mt-2">
-                    <li>
+                    <li class="mega-link">
                       <a href="#">
-                        <div class="flex items-center justify-between">
+                        <div>
                           <p class="text-black2">THC</p>
                           <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
@@ -96,9 +95,9 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="mega-link">
                       <a href="#">
-                        <div class="flex items-center justify-between">
+                        <div>
                           <p class="text-black2">CBD</p>
                           <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
@@ -106,9 +105,9 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="mega-link">
                       <a href="#">
-                        <div class="flex items-center justify-between">
+                        <div>
                           <p class="text-black2">Adaptogens</p>
                           <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
@@ -116,9 +115,9 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="mega-link">
                       <a href="#">
-                        <div class="flex items-center justify-between">
+                        <div>
                           <p class="text-black2">No Buzz</p>
                           <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
@@ -131,42 +130,40 @@
               </div>
               <div class="flex gap-6 grow text-white3">
                 <div class="grow">
-                  <div
-                    class="bg-[url('./assets/images/menu1.jpg')] bg-center bg-cover bg-no-repeat h-55 text-end justify-items-end pt-6.75 pr-6.25">
-                    <h3 class="max-w-56.75">NEW ARRIVALS</h3>
-                    <li class="items-center mt-14.25">
-                      <a href="#">
-                        <div class="flex items-center gap-3">
-                          <p class="text-white">SHOP ALL</p>
-                          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
-                          </svg>
-                        </div>
-                      </a>
-                    </li>
+                  <div class="bg-[url('./assets/images/menu1.jpg')] mega-img-container">
+                    <h4 class="max-w-56.75">NEW ARRIVALS</h4>
+                    <a href="#">
+                    </a>
+                    <div class="flex items-center gap-3 mt-14.25">
+                      <p class="text-white">SHOP ALL</p>
+                      <div>
+                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="grow text-white3">
-                  <div
-                    class="bg-[url('./assets/images/menu2.jpg')] bg-center bg-cover bg-no-repeat h-55 text-end justify-items-end pt-6.75 pr-6.25">
-                    <h3 class="max-w-56.75">BEST SELLERS</h3>
-                    <li class="items-center mt-14.25">
-                      <a href="#">
-                        <div class="flex items-center gap-3">
-                          <p class="text-white">SHOP ALL</p>
-                          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
-                          </svg>
-                        </div>
-                      </a>
-                    </li>
+                <div class="grow">
+                  <div class="bg-[url('./assets/images/menu2.jpg')] mega-img-container">
+                    <h4 class="max-w-56.75">BEST SELLERS</h4>
+                    <a href="#">
+                    </a>
+                    <div class="flex items-center gap-3 mt-14.25">
+                      <p class="text-white">SHOP ALL</p>
+                      <div>
+                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1L7 7L1 13" stroke="#AE65CF" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="flex items-center">
-            <h6 class="leading-4">LEARN</h6>
+            <div class="text-16">LEARN</div>
             <svg width="10" height="6" class="mx-2.75" viewBox="0 0 10 6" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -217,18 +214,28 @@
       <div class="lg:hidden flex justify-between items-center py-10 sm:pl-12.5 sm:pr-11.75 2xs:px-6.25 bg-white3">
         <div class="flex gap-[17.27px] items-center">
           <div>
-            <div id="menu-button">
-              <svg width="32" height="20" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1H33.7273" stroke="black" stroke-width="2" stroke-linecap="round" />
-                <path d="M1 11H33.7273" stroke="black" stroke-width="2" stroke-linecap="round" />
-                <path d="M1 21H33.7273" stroke="black" stroke-width="2" stroke-linecap="round" />
-              </svg>
+            <div class="flex gap-[17.27px]">
+              <div id="menu-button">
+                <svg width="32" height="20" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1H33.7273" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  <path d="M1 11H33.7273" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  <path d="M1 21H33.7273" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18.0452 17.1614C19.2638 15.7405 20 13.8938 20 11.875C20 7.38769 16.3624 3.75 11.875 3.75C7.38769 3.75 3.75 7.38769 3.75 11.875C3.75 16.3624 7.38769 20 11.875 20C13.8936 20 15.7404 19.2639 17.1614 18.0452L18.3885 19.2724C18.0948 19.9231 18.2153 20.7153 18.75 21.25L23.125 25.6251C23.8154 26.3155 24.9346 26.3155 25.625 25.6251C26.3154 24.9347 26.3154 23.8155 25.625 23.1251L21.25 18.75C20.7153 18.2153 19.9231 18.0948 19.2724 18.3885L18.0452 17.1614ZM18.75 11.875C18.75 15.672 15.672 18.75 11.875 18.75C8.07804 18.75 5 15.672 5 11.875C5 8.07804 8.07804 5 11.875 5C15.672 5 18.75 8.07804 18.75 11.875ZM24.7411 24.009L20.3661 19.634C20.164 19.4318 19.8361 19.4318 19.6339 19.6339C19.4318 19.8361 19.4318 20.164 19.6339 20.3661L24.0089 24.7412C24.2111 24.9434 24.5389 24.9434 24.7411 24.7412C24.9434 24.539 24.9434 24.2111 24.7411 24.009Z"
+                    fill="#0F130C" />
+                </svg>
+              </div>
             </div>
             <div id="menu"
-              class="hidden absolute top-7.5 left-0 right-0 z-50 mt-2 w-full bg-darkgrayish-green pt-10.25">
+              class="hidden absolute top-9.25 left-0 right-0 z-50 w-full bg-darkgrayish-green pt-10.25 sm:px-12.5 2xs:px-5">
               <div class="flex">
-                <div class="w-fit">
-                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div id="close-menu-button" class="2xs:w-7.5 2xs:h-7.5 sm:w-12.5 sm:h-12.5">
+                  <svg width="50" height="50" viewBox="0 0 50 50" class="w-full h-full object-cover" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <circle cx="24.761" cy="24.7607" r="17.5087" transform="rotate(-45 24.761 24.7607)" fill="#949C7A"
                       stroke="#F8F6F0" stroke-width="3.5" />
                     <path d="M18.1124 18.1196L31.7737 31.7809" stroke="#F8F6F0" stroke-width="3.5"
@@ -237,26 +244,66 @@
                       stroke-linecap="round" />
                   </svg>
                 </div>
-                <div class="w-fit justify-self-center">
+                <div class="content-center w-full justify-items-center">
                   <img src="./assets/images/logo.svg" alt="logo" class="2xs:max-w-32.5 sm:max-w-73.25">
                 </div>
               </div>
+
+              <div class="sm:pt-20.25 sm:pb-16.25 2xs:py-7.5">
+                <div class="flex">
+                  <a href="#">
+                    <div class="mobile-link">
+                      <h3 class="text-white">SHOP BY EXPERIENCE</h3>
+                      <svg width="30" height="30" class="-rotate-90" viewBox="0 0 10 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.84375 0L8.875 0C9.4375 0 9.71875 0.6875 9.3125 1.09375L5.3125 5.09375C5.0625 5.34375 4.65625 5.34375 4.40625 5.09375L0.40625 1.09375C0 0.6875 0.28125 0 0.84375 0Z"
+                          fill="#ffffff" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="flex 2xs:mt-7.5 sm:mt-12.5">
+                  <a href="#">
+                    <div class="mobile-link">
+                      <h3 class="text-white">SHOP BY BUZZ</h3>
+                      <svg width="30" height="30" class="-rotate-90" viewBox="0 0 10 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.84375 0L8.875 0C9.4375 0 9.71875 0.6875 9.3125 1.09375L5.3125 5.09375C5.0625 5.34375 4.65625 5.34375 4.40625 5.09375L0.40625 1.09375C0 0.6875 0.28125 0 0.84375 0Z"
+                          fill="#ffffff" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="sm:mt-7.5 2xs:mt-5 flex flex-col">
+                  <div class="flex">
+                    <a href="#">
+                      <div class="mobile-link">
+                        <h3 class="mobile-learn">LEARN</h3>
+                        <svg width="30" height="30" class="-rotate-90" viewBox="0 0 10 6" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.84375 0L8.875 0C9.4375 0 9.71875 0.6875 9.3125 1.09375L5.3125 5.09375C5.0625 5.34375 4.65625 5.34375 4.40625 5.09375L0.40625 1.09375C0 0.6875 0.28125 0 0.84375 0Z"
+                            fill="#ffffff" />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="mobile-learn">NEW ARRIVALS</h3>
+                <h3 class="mobile-learn">BEST SELLERS</h3>
+                <h3 class="mobile-learn">SUBSCRIPTIONS</h3>
+              </div>
             </div>
           </div>
-          <div>
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M18.0452 17.1614C19.2638 15.7405 20 13.8938 20 11.875C20 7.38769 16.3624 3.75 11.875 3.75C7.38769 3.75 3.75 7.38769 3.75 11.875C3.75 16.3624 7.38769 20 11.875 20C13.8936 20 15.7404 19.2639 17.1614 18.0452L18.3885 19.2724C18.0948 19.9231 18.2153 20.7153 18.75 21.25L23.125 25.6251C23.8154 26.3155 24.9346 26.3155 25.625 25.6251C26.3154 24.9347 26.3154 23.8155 25.625 23.1251L21.25 18.75C20.7153 18.2153 19.9231 18.0948 19.2724 18.3885L18.0452 17.1614ZM18.75 11.875C18.75 15.672 15.672 18.75 11.875 18.75C8.07804 18.75 5 15.672 5 11.875C5 8.07804 8.07804 5 11.875 5C15.672 5 18.75 8.07804 18.75 11.875ZM24.7411 24.009L20.3661 19.634C20.164 19.4318 19.8361 19.4318 19.6339 19.6339C19.4318 19.8361 19.4318 20.164 19.6339 20.3661L24.0089 24.7412C24.2111 24.9434 24.5389 24.9434 24.7411 24.7412C24.9434 24.539 24.9434 24.2111 24.7411 24.009Z"
-                fill="#0F130C" />
-            </svg>
-          </div>
         </div>
-
         <!-- logo -->
         <div>
           <img src="./assets/images/logo.svg" alt="logo" class="2xs:max-w-32.5 sm:max-w-73.25">
         </div>
-
         <div class="flex gap-6">
           <div>
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -286,21 +333,22 @@
     </nav>
 
     <div class="2xs:hidden lg:flex bg-darkgrayish-green flex gap-12 justify-center text-white2 py-3.75">
-      <a href="#" class="h6">NEW ARRIVALS</a>
-      <a href="#" class="h6">BEST SELLERS</a>
-      <a href="#" class="h6">SUBSCRIPTIONS</a>
+      <a href="#" class="text-16 text-white">NEW ARRIVALS</a>
+      <a href="#" class="text-16 text-white">BEST SELLERS</a>
+      <a href="#" class="text-16 text-white">SUBSCRIPTIONS</a>
     </div>
   </header>
 
   <div class="hero-section">
-    <div class="h-full text-white relative pb-81">
+    <div class="h-full text-white relative 2xs:pb-50 md:pb-81">
       <div class="absolute inset-0 w-full h-full">
         <img src="./assets/images/hero-img.jpg" alt="hero image" class="w-full h-full object-cover">
       </div>
-      <div class="relative max-w-211 justify-self-center text-center pt-27.25 px-7.5">
+      <div class="relative max-w-211 justify-self-center text-center pt-30.25 2xs:px-5 lg:px-0">
         <h2>Your Fridge Has Higher Standards.</h2>
-        <h5>Explore the ultimate hemp beverage marketplace — packed with functional, refreshing, and feel-good finds.
-        </h5>
+        <h6 class="mt-8.5">Explore the ultimate hemp beverage marketplace — packed with functional, refreshing, and
+          feel-good finds.
+        </h6>
         <div class="btn-purple justify-self-center mt-12.75">
           <a href="#">
             SHOP ALL
@@ -309,6 +357,157 @@
       </div>
     </div>
   </div>
+
+  <!-- <section class="buzz">
+    <div class="container-max-1240 text-center">
+      <h5 class="text-darkgrayish-green">Shop By</h5>
+      <h1 class="text-black2">BUZZ</h1>
+      <div class="flex gap-9.25">
+        <div class="grow">
+          <div class="bg-[url('./assets/images/buzz1.jpg')] bg-cover bg-no-repeat">
+            <h5 class="font-heading text-white">THC</h5>
+          </div>
+          <div class="w-full btn-purple-radius rounded-none!">
+            <a href="#">
+              <div class="flex items-center gap-2 justify-center">
+                <span>SHOP NOW</span>
+                <svg width="10" height="6" class="-rotate-90" viewBox="0 0 10 6" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.84375 0L8.875 0C9.4375 0 9.71875 0.6875 9.3125 1.09375L5.3125 5.09375C5.0625 5.34375 4.65625 5.34375 4.40625 5.09375L0.40625 1.09375C0 0.6875 0.28125 0 0.84375 0Z"
+                    fill="#ffff" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="grow">
+          <div class="bg-[url('./assets/images/buzz1.jpg')] bg-cover bg-no-repeat">
+            <h5 class="font-heading text-white">THC</h5>
+          </div>
+          <div class="w-full btn-purple-radius rounded-none!">
+            <a href="#">
+              <div class="flex items-center gap-2 justify-center">
+                <span>SHOP NOW</span>
+                <svg width="10" height="6" class="-rotate-90" viewBox="0 0 10 6" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.84375 0L8.875 0C9.4375 0 9.71875 0.6875 9.3125 1.09375L5.3125 5.09375C5.0625 5.34375 4.65625 5.34375 4.40625 5.09375L0.40625 1.09375C0 0.6875 0.28125 0 0.84375 0Z"
+                    fill="#ffff" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="grow">
+          <div class="bg-[url('./assets/images/buzz1.jpg')] bg-cover bg-no-repeat">
+            <h5 class="font-heading text-white">THC</h5>
+          </div>
+          <div class="w-full btn-purple-radius rounded-none!">
+            <a href="#">
+              <div class="flex items-center gap-2 justify-center">
+                <span>SHOP NOW</span>
+                <svg width="10" height="6" class="-rotate-90" viewBox="0 0 10 6" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.84375 0L8.875 0C9.4375 0 9.71875 0.6875 9.3125 1.09375L5.3125 5.09375C5.0625 5.34375 4.65625 5.34375 4.40625 5.09375L0.40625 1.09375C0 0.6875 0.28125 0 0.84375 0Z"
+                    fill="#ffff" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="grow">
+          <div class="bg-[url('./assets/images/buzz1.jpg')] bg-cover bg-no-repeat">
+            <h5 class="font-heading text-white">THC</h5>
+          </div>
+          <div class="w-full btn-purple-radius rounded-none!">
+            <a href="#">
+              <div class="flex items-center gap-2 justify-center">
+                <span>SHOP NOW</span>
+                <svg width="10" height="6" class="-rotate-90" viewBox="0 0 10 6" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.84375 0L8.875 0C9.4375 0 9.71875 0.6875 9.3125 1.09375L5.3125 5.09375C5.0625 5.34375 4.65625 5.34375 4.40625 5.09375L0.40625 1.09375C0 0.6875 0.28125 0 0.84375 0Z"
+                    fill="#ffff" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente itaque sed impedit quo consectetur praesentium
+    aperiam rerum quae vitae consequuntur saepe pariatur facilis, corrupti tempore nulla. Voluptatibus natus dolorum
+    eligendi inventore adipisci voluptate tempore, rerum recusandae iusto distinctio? Sed suscipit aut tempore
+    doloremque ipsa alias impedit deserunt, quis, laudantium nam error, ullam ab commodi dignissimos! Iste ab ipsa
+    incidunt harum natus in quibusdam saepe corporis? Porro, tenetur. Doloribus corporis, voluptates impedit ipsam
+    adipisci officiis est ratione totam, eaque non animi minima unde numquam fugit perspiciatis enim repellendus,
+    laborum in dicta a earum laudantium rerum. Voluptate suscipit praesentium quod enim, explicabo illo possimus. Eum
+    obcaecati quidem aliquid id. Praesentium itaque, atque laudantium ea beatae natus consequuntur dolor repellat
+    dolores sapiente quis minima nesciunt saepe tempore expedita corrupti. Quia mollitia neque qui perferendis. Hic
+    molestiae quos corrupti natus animi fuga in quas sunt. Facere ex autem fugit libero minus porro sunt, deleniti nisi
+    eius magni reiciendis veniam eveniet in ut omnis odit veritatis adipisci ipsa. Totam voluptatum quia architecto
+    debitis possimus nam, cum quis doloremque odit ullam magnam similique iure saepe iste sit tempora consectetur
+    deserunt nulla quidem. Sed suscipit hic vitae nemo reprehenderit optio ex animi maxime quas? Hic nam nulla ad
+    impedit commodi ipsum quisquam quaerat quasi cumque eligendi eos, adipisci facilis quam soluta explicabo natus,
+    officiis cupiditate excepturi. Repellendus provident, saepe enim quam dolorum sequi deserunt atque expedita optio
+    sint voluptate excepturi ad incidunt veritatis dolores deleniti, in eos aspernatur numquam ducimus mollitia amet
+    eius. Accusantium dolores quam, ea unde quae consectetur quas rerum omnis tempora voluptates placeat, cupiditate,
+    nam ab quisquam ducimus quod molestiae commodi voluptatem error corrupti. Quam excepturi quibusdam voluptatum sint
+    hic ipsam officiis? Aut dolore quas esse rem repellendus maxime accusamus voluptatibus voluptas omnis fugiat.
+    Tenetur magni dicta ratione quae consequuntur asperiores doloremque libero unde ipsa! Ex temporibus deleniti itaque
+    soluta, quos cum ipsa incidunt excepturi blanditiis quidem sapiente, corporis accusantium possimus iure provident
+    quo esse? In, nihil. Deserunt nostrum quia dolorem sequi minima assumenda nulla suscipit ratione cupiditate at
+    facilis fugit neque odio nisi, dolores totam, dolorum quae? Labore optio, eaque accusamus iusto asperiores fuga sunt
+    nihil cumque possimus sint, repellendus, perspiciatis obcaecati iste deleniti! Delectus qui eos sed laborum
+    voluptatum animi doloribus maiores aperiam ipsum aliquid in rem, et sapiente suscipit. Quo consequatur hic explicabo
+    odio praesentium laborum reiciendis perspiciatis, quam repudiandae, sed delectus voluptatem, reprehenderit tempore
+    quidem pariatur eum magni nemo beatae. Laboriosam repellat reprehenderit temporibus est, hic illo quos voluptates
+    esse cum vel quam ad vitae architecto eaque, explicabo soluta odio necessitatibus? Fugiat nisi non ipsum aliquam
+    pariatur aspernatur temporibus, inventore alias qui, vero nulla recusandae minima ipsa distinctio optio, expedita
+    dolorem? Ipsam dolores minima vel! Consectetur porro aut, mollitia in dolores distinctio architecto placeat omnis!
+    Aut ut cupiditate quisquam est expedita dolores necessitatibus? Accusantium eveniet fugit veniam libero commodi
+    inventore qui eos deserunt explicabo quibusdam unde debitis, ea in perspiciatis ducimus, dignissimos quam dolores
+    nemo voluptate laudantium fugiat earum. Eaque, quo ullam cum omnis nulla dolore asperiores quia impedit vitae
+    deleniti. Doloribus et reprehenderit tenetur laboriosam ullam rem debitis, numquam sapiente labore impedit, cumque
+    beatae vero, omnis earum cupiditate alias aut accusantium illum quidem. Sint assumenda explicabo mollitia, debitis
+    suscipit illum repellat ullam modi eaque, numquam, vel quia velit delectus iusto! Aliquam, explicabo. Eveniet quas
+    sed repudiandae totam aspernatur, repellendus iure molestias laudantium inventore accusantium dolores velit eaque
+    doloribus soluta quod, dolorum debitis enim possimus nostrum. Recusandae facere repellendus debitis dolorum esse aut
+    animi consectetur odio illo deleniti autem perspiciatis expedita, ut fugiat ea in culpa. Explicabo deleniti ipsum
+    pariatur, vitae, amet eos iste officia soluta, veritatis minima odit quis enim corrupti esse odio fugiat! Facilis
+    nostrum distinctio illum? Itaque ut neque eum nostrum vitae. Debitis laborum itaque dolorum doloribus nesciunt, fuga
+    doloremque? Nihil tempora voluptas deserunt totam, obcaecati dolor fugit mollitia similique doloribus quibusdam
+    voluptatibus reiciendis eos eligendi sunt neque voluptatem quam omnis natus ad. Velit fugit sequi saepe aliquam iure
+    exercitationem magnam nesciunt? Asperiores sed fuga amet, est, non, quis sapiente recusandae veniam eveniet
+    cupiditate suscipit voluptatibus repudiandae. Porro, est mollitia. Nobis enim odit expedita unde voluptate aliquam,
+    facilis eius id, ratione, magni quod dolorem. Dolorem exercitationem cum accusamus possimus vel sed eligendi ullam
+    ratione tempora asperiores! Repellendus neque dolores debitis totam repellat sequi illo tempora quis ipsam nam
+    aliquam doloremque consequuntur ab voluptatum voluptas ipsa, vel consequatur consectetur vitae! Voluptatem amet
+    culpa illum at maiores ad fugit quam, molestiae molestias commodi. Voluptate illum impedit dolorem excepturi totam
+    repellendus perspiciatis. Ipsa sapiente dolor ex illum omnis. Saepe, sapiente. Blanditiis, quae incidunt. Dolor
+    impedit officiis excepturi sed iste neque ducimus minima, nisi odio magnam non id rerum ad hic obcaecati laborum
+    fugiat fugit eum laboriosam doloribus rem ullam. Corporis adipisci explicabo quae, quia laborum quaerat quas non,
+    doloremque nobis aliquid deleniti, sed facere ea sit nam ab eveniet ipsa repudiandae excepturi quo earum! Libero
+    eveniet voluptates tempora vitae minus impedit facere expedita accusantium quia eos reprehenderit ullam, dignissimos
+    deleniti nam commodi? Iusto hic molestiae dolores! Consequatur explicabo voluptatibus, commodi, quo dolore aut ipsam
+    laboriosam porro animi consectetur odit maxime. Quo, facere! Non incidunt temporibus, harum quo enim vitae itaque
+    rem provident ipsum cum quis, cupiditate iure ea error totam animi neque nihil, est exercitationem ab. Cumque eum
+    labore quam nesciunt? Voluptatibus reprehenderit neque impedit autem voluptatum explicabo nemo repudiandae
+    recusandae illo, reiciendis eveniet, nisi assumenda consequatur quasi molestiae nulla culpa quas, quibusdam a sunt
+    dolorem voluptate totam laboriosam dignissimos. Quos minima vero beatae delectus ducimus, qui deleniti eligendi
+    sequi pariatur, laboriosam saepe unde perspiciatis illum vitae, facilis voluptate facere explicabo iste dignissimos
+    eius nihil eos tenetur quibusdam! Quasi accusamus eligendi natus iure, dolores, quod ad commodi in, delectus
+    consequatur exercitationem veniam culpa sint laboriosam praesentium dolorem deserunt. Corrupti, mollitia dolor iste
+    adipisci sint, optio nobis nostrum voluptas saepe neque quia perferendis animi eum culpa nam quas eos sapiente
+    quisquam consequuntur sunt hic, officia tempore quam et. Esse, similique? Enim eveniet reprehenderit, ducimus
+    repellendus quo, amet nam temporibus accusamus, cum impedit similique deleniti officia suscipit vel soluta inventore
+    consequuntur recusandae!
+  </section>
 
   <!-- Scripts -->
   <script src="./assets/js/main.js"></script>

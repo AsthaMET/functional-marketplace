@@ -25,10 +25,10 @@
   font-family: "american-lemon";
   src: url("../public/assets/Fonts/American\ Lemon.otf");
 }
-/* @font-face {
+@font-face {
   font-family: "arya-regular";
-  src: url("../public/assets/Fonts/arya-regular.ttf");
-} */
+  src: url("../public/assets/Fonts/fonnts.com-Arya-Regular.ttf");
+}
 
 @layer base {
   html {
@@ -44,33 +44,30 @@
   }
   h1,
   .h1 {
-    @apply text-[70px];
+    @apply text-[70px] leading-15.75;
   }
   h2,
   .h2 {
-    @apply text-[65px] uppercase font-heading leading-12.25;
+    @apply text-[65px] 2xs:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[65px] uppercase font-heading leading-16 2xs:leading-12 md:leading-14.25 lg:leading-16;
   }
   h3,
   .h3 {
-    @apply text-[46px] leading-11 font-heading font-normal;
+    @apply text-[50px] 2xs:text-[25px] sm:text-[50px] leading-12.5 2xs:leading-6.25 sm:leading-12.5 w-max;
   }
   h4,
   .h4 {
-    @apply text-[40px] font-heading;
+    @apply text-[46px] leading-11 font-heading font-normal;
   }
   h5,
   .h5 {
-    @apply text-[30px] font-semibold;
+    @apply text-[40px] font-american-lemon;
   }
   h6,
   .h6 {
-    @apply text-[22px];
+    @apply text-[30px] 2xs:text-[18px] md:text-[25px] lg:text-[30px] font-semibold leading-8.25;
   }
   p {
     @apply text-[20px] font-semibold;
-  }
-  li {
-    @apply list-none;
   }
   .small-text {
     @apply text-[18px];
@@ -79,7 +76,16 @@
     @apply text-[14px] leading-3.5 font-bold;
   }
   .text-16 {
-    @apply text-base leading-4 font-bold;
+    @apply text-base leading-4 font-bold text-black2;
+  }
+  .text-22 {
+    @apply text-[22px];
+  }
+  .text-26 {
+    @apply text-[26px] leading-12 font-heading font-semibold;
+  }
+  li {
+    @apply list-none;
   }
 }
 
@@ -87,10 +93,73 @@
   .btn-purple {
     @apply text-white bg-purple hover:bg-white3 hover:text-purple hover:border-2 hover:border-purple rounded-[5px] py-3 px-10.25 w-fit text-[14px] font-bold leading-4 cursor-pointer;
   }
+  .btn-purple-radius {
+    @apply text-white bg-purple hover:bg-white3 hover:text-purple hover:border-2 hover:border-purple py-[10.5px] px-10.25 w-fit text-[14px] font-bold leading-4 cursor-pointer;
+  }
 }
 
 @layer utilities {
   .container-max-1240 {
     @apply lg:px-10 xl:px-25;
   }
+  .mega-link div {
+    @apply flex items-center justify-between;
+  }
+  .mega-img-container{
+    @apply bg-center bg-cover relative bg-no-repeat h-55 text-end justify-items-end pt-6.75 pr-6.25;
+  }
+  .mega-img-container a {
+    @apply absolute w-full h-full inset-0 justify-items-end;
+  }
+  .mobile-link {
+    @apply flex items-center gap-5;
+  }
+  .mobile-learn{
+    @apply text-white leading-[1.8em];
+  }
+}
+
+@keyframes stickySlideDown {
+  0% {
+    opacity: 0.7;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation: stickySlideDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 37px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  animation: stickySlideDown 1s ease-in-out;
+}
+
+.fixed-announcement-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  animation: stickySlideDown 1s ease-in-out;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 37px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  animation: stickySlideDown 1s ease-in-out;
 }
